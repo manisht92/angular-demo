@@ -1,1 +1,19 @@
-<p>recipe-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" style="margin: 10px">
+    <a href="#!" *ngFor="let recipe of recipes" class="list-group-item clearfix">
+      <div class="row">
+        <div class="col-md-2">
+          <p>{{ recipe.name }}</p>
+        </div>
+        <div class="col-md-3">
+          <p>{{ recipe.description }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
